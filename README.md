@@ -31,7 +31,7 @@ DL-LAb/
 - PyTorch tensor initialization methods and data types
 - Tensor operations (arithmetic, broadcasting, indexing, reshaping)
 - Automatic differentiation using Autograd
-- Linear algebra operations with TensorFlow
+- Linear algebra operations with PyTorch
 - Implementation of AND & OR gates using Perceptron
 
 **Key Concepts:**
