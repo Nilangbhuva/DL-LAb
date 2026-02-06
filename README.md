@@ -20,6 +20,8 @@ DL-LAb/
 │   ├── Lab-2.ipynb            # CNN and MLP implementations
 │   └── data/                  # MNIST dataset
 │       └── MNIST/
+├── Lab-3/                      # Lab 3: CNN Architectures Comparison
+│   └── Lab-3.ipynb            # Multiple CNN architectures and loss functions
 └── README.md                   # This file
 ```
 
@@ -63,6 +65,33 @@ DL-LAb/
 
 ---
 
+### Lab 3: Comparative Analysis of Different CNN Architectures
+
+**Topics Covered:**
+- Implementation of landmark CNN architectures (LeNet-5, AlexNet, VGGNet, ResNet-50, ResNet-100, EfficientNet, InceptionV3, MobileNet)
+- CIFAR-10 dataset preprocessing and augmentation
+- Advanced loss functions (BCE, Focal Loss, ArcFace)
+- Optimizer comparison (Adam, SGD with momentum)
+- Feature visualization with t-SNE
+- Comparative analysis of architecture performance
+
+**Key Concepts:**
+- Deep CNN architectures and their evolution
+- Residual connections and skip connections
+- Depthwise separable convolutions
+- Inception modules
+- Loss function impact on feature learning
+- Feature space visualization and clustering
+
+**Part 1:** Train and compare 8 different CNN architectures on CIFAR-10
+**Part 2:** Study impact of loss functions (BCE, Focal Loss, ArcFace) and optimizers
+**Part 3:** Visualize feature clustering using t-SNE for different loss functions
+
+**File:** `Lab-3/Lab-3.ipynb`
+
+
+---
+
 ## 🛠️ Prerequisites
 
 Before running the labs, ensure you have the following installed:
@@ -73,6 +102,10 @@ Before running the labs, ensure you have the following installed:
 - TorchVision
 - NumPy
 - Matplotlib
+- Scikit-learn
+- Seaborn
+- tqdm
+- Pandas
 
 ## 📦 Installation
 
@@ -90,11 +123,6 @@ Before running the labs, ensure you have the following installed:
 
 3. **Install required packages:**
    ```bash
-   pip install torch torchvision numpy matplotlib jupyter
-   ```
-
-   Or if a `requirements.txt` file is available:
-   ```bash
    pip install -r requirements.txt
    ```
 
@@ -107,7 +135,7 @@ Before running the labs, ensure you have the following installed:
    jupyter notebook
    ```
 
-2. **Navigate to the desired lab folder** (Lab-1 or Lab-2) in the Jupyter interface
+2. **Navigate to the desired lab folder** (Lab-1, Lab-2, or Lab-3) in the Jupyter interface
 
 3. **Open the notebook** (.ipynb file) and run the cells sequentially
 
@@ -125,6 +153,12 @@ cd Lab-2
 jupyter notebook Lab-2.ipynb
 ```
 
+**Lab 3:**
+```bash
+cd Lab-3
+jupyter notebook Lab-3.ipynb
+```
+
 ## 📊 Lab Results
 
 ### Lab 1 Outcomes
@@ -137,12 +171,21 @@ jupyter notebook Lab-2.ipynb
 - Compared performance of different architectures
 - Achieved classification accuracy on handwritten digit recognition
 
+### Lab 3 Outcomes
+- Implemented and compared 8 landmark CNN architectures
+- Analyzed impact of different loss functions on model performance
+- Visualized feature clustering with t-SNE
+- Demonstrated superiority of advanced architectures (ResNet) over classical ones (LeNet)
+
 ## 🔍 Key Learnings
 
 - Understanding of PyTorch tensor operations and computational graphs
 - Implementation of fundamental neural network architectures
 - Experience with training deep learning models
 - Dataset preprocessing and model evaluation techniques
+- Comparative analysis of CNN architectures and their evolution
+- Impact of loss functions on feature learning and discrimination
+- Feature visualization and clustering techniques
 
 ## 📧 Contact
 
