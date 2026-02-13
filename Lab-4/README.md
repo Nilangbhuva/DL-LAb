@@ -190,9 +190,7 @@ Core dependencies (see main `requirements.txt`):
 
 Additional dependencies for Lab-4:
 - imbalanced-learn >= 0.8.0
-- umap-learn >= 0.5.0
-- grad-cam >= 1.3.0
-- efficientnet-pytorch (optional, can use torchvision)
+- umap-learn >= 0.5.0 (optional, visualization will skip if not available)
 
 ## Files
 
