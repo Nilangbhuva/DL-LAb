@@ -22,6 +22,8 @@ DL-LAb/
 │       └── MNIST/
 ├── Lab-3/                      # Lab 3: CNN Architectures Comparison
 │   └── Lab-3.ipynb            # Multiple CNN architectures and loss functions
+├── Lab-4/                      # Lab 4: Imbalanced Image Classification
+│   └── Lab-4.ipynb            # CNN for imbalanced datasets
 └── README.md                   # This file
 ```
 
@@ -89,6 +91,42 @@ DL-LAb/
 
 **File:** `Lab-3/Lab-3.ipynb`
 
+---
+
+### Lab 4: CNN Architectures for Imbalanced Image Classification
+
+**Topics Covered:**
+- Imbalanced dataset handling techniques (oversampling, undersampling, SMOTE)
+- Custom CNN architecture design for imbalanced classification
+- Multiple loss functions for class imbalance (Focal Loss, Class-Balanced Loss, Weighted CE)
+- Comparative analysis of CNN architectures (EfficientNet vs ResNet)
+- Feature visualization (t-SNE, PCA, UMAP, Grad-CAM)
+- Transfer learning across imbalanced datasets
+- Error analysis and minority class performance
+
+**Key Concepts:**
+- Data-level imbalance handling (oversampling, undersampling, augmentation)
+- Algorithm-level techniques (class weighting, cost-sensitive learning)
+- Evaluation metrics for imbalanced datasets (Balanced Accuracy, G-Mean, PR-AUC)
+- Feature representation in imbalanced scenarios
+- Transfer learning and domain adaptation
+- Architectural choices for imbalanced data
+
+**Datasets:**
+- Flower Recognition (5 classes, custom imbalanced distribution)
+- CIFAR-10 Imbalanced (10 classes, long-tailed distribution 100:1)
+
+**Seven Problem Statements:**
+1. Architecture design and regularization
+2. Imbalanced dataset handling strategies
+3. Comparative architecture analysis (EfficientNet vs ResNet)
+4. Loss function and optimizer experiments
+5. Feature representation and visualization
+6. Transfer learning and generalization
+7. Error analysis and improvement proposals
+
+**File:** `Lab-4/Lab-4.ipynb`
+
 
 ---
 
@@ -106,6 +144,8 @@ Before running the labs, ensure you have the following installed:
 - Seaborn
 - tqdm
 - Pandas
+- imbalanced-learn (for Lab-4)
+- umap-learn (for Lab-4)
 
 ## 📦 Installation
 
@@ -135,7 +175,7 @@ Before running the labs, ensure you have the following installed:
    jupyter notebook
    ```
 
-2. **Navigate to the desired lab folder** (Lab-1, Lab-2, or Lab-3) in the Jupyter interface
+2. **Navigate to the desired lab folder** (Lab-1, Lab-2, Lab-3, or Lab-4) in the Jupyter interface
 
 3. **Open the notebook** (.ipynb file) and run the cells sequentially
 
@@ -159,6 +199,12 @@ cd Lab-3
 jupyter notebook Lab-3.ipynb
 ```
 
+**Lab 4:**
+```bash
+cd Lab-4
+jupyter notebook Lab-4.ipynb
+```
+
 ## 📊 Lab Results
 
 ### Lab 1 Outcomes
@@ -177,6 +223,15 @@ jupyter notebook Lab-3.ipynb
 - Visualized feature clustering with t-SNE
 - Demonstrated superiority of advanced architectures (ResNet) over classical ones (LeNet)
 
+### Lab 4 Outcomes
+- Designed CNN architectures for imbalanced image classification
+- Implemented multiple imbalance handling techniques (oversampling, SMOTE, class weighting)
+- Compared EfficientNet and ResNet on imbalanced datasets
+- Analyzed performance using imbalance-specific metrics (Balanced Accuracy, G-Mean, PR-AUC)
+- Visualized learned features with t-SNE, UMAP, and Grad-CAM
+- Demonstrated transfer learning across imbalanced domains
+- Conducted comprehensive error analysis for minority classes
+
 ## 🔍 Key Learnings
 
 - Understanding of PyTorch tensor operations and computational graphs
@@ -186,6 +241,11 @@ jupyter notebook Lab-3.ipynb
 - Comparative analysis of CNN architectures and their evolution
 - Impact of loss functions on feature learning and discrimination
 - Feature visualization and clustering techniques
+- Handling class imbalance in real-world image classification
+- Data-level and algorithm-level techniques for imbalanced learning
+- Transfer learning across different domains and datasets
+- Advanced evaluation metrics for imbalanced classification
+- Error analysis and debugging strategies for minority class failures
 
 ## 📧 Contact
 
