@@ -36,7 +36,7 @@ This project implements a complete deep learning pipeline for **multi-class clas
 | Angiectasia | 80 | Minority |
 | Erythema | 180 | Minority |
 | Foreign body | 40 | Minority |
-| Ampulla of Vater | 10 | Minority |
+| Ampulla of vater | 10 | Minority |
 
 > **Note:** Since the Kvasir-Capsule dataset requires institutional access, this notebook uses a **synthetic dataset** (random tensors shaped `3 × 224 × 224`) that perfectly mirrors the real dataset's class distribution, label structure, and imbalance characteristics. The entire pipeline is production-ready — simply replace `WCESyntheticDataset` with `torchvision.datasets.ImageFolder` pointing to the real data directory.
 
