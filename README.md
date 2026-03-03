@@ -23,7 +23,9 @@ DL-LAb/
 ├── Lab-3/                      # Lab 3: CNN Architectures Comparison
 │   └── Lab-3.ipynb            # Multiple CNN architectures and loss functions
 ├── Lab-4/                      # Lab 4: Imbalanced Image Classification
-│   └── Lab-4.ipynb            # CNN for imbalanced datasets
+│   └── Lab-4.ipynb            # CNN for imbalanced datasets (CIFAR-10 + Flowers)
+├── Minor-Project/              # Minor Project: WCE Classification
+│   └── Minor-Project.ipynb    # Deep Learning for WCE endoscopy images
 └── README.md                   # This file
 ```
 
@@ -125,8 +127,34 @@ DL-LAb/
 6. Transfer learning and generalization
 7. Error analysis and improvement proposals
 
+**Datasets:**
+- Flower Recognition (5 classes: daisy, dandelion, rose, sunflower, tulip) — imbalance 100:500:200:50:150
+- CIFAR-10 Imbalanced (10 classes) — long-tailed distribution 100:1
+
 **File:** `Lab-4/Lab-4.ipynb`
 
+---
+
+### Minor Project: Deep Learning-Based Classification of Imbalanced WCE Images
+
+**Topics Covered:**
+- Wireless Capsule Endoscopy (WCE) image classification
+- Kvasir-Capsule dataset (14 classes, highly imbalanced)
+- Under-sampling and augmentation-based over-sampling
+- Transfer learning with EfficientNet-B0, MobileNet-V2, ResNet-50
+- Intelligent learning rate scheduling (ReduceLROnPlateau, CosineAnnealingLR)
+- Model evaluation using Accuracy, Precision, Recall, F1-score
+
+**Seven Lab Tasks:**
+1. Dataset exploration and imbalance analysis
+2. Under-sampling (majority class control)
+3. Data augmentation-based over-sampling for minority classes
+4. Data pre-processing (resize, normalize, split 70/15/15)
+5. Transfer learning model design (three architectures)
+6. Intelligent learning rate control
+7. Model training and evaluation (three settings)
+
+**File:** `Minor-Project/Minor-Project.ipynb`
 
 ---
 
@@ -175,7 +203,7 @@ Before running the labs, ensure you have the following installed:
    jupyter notebook
    ```
 
-2. **Navigate to the desired lab folder** (Lab-1, Lab-2, Lab-3, or Lab-4) in the Jupyter interface
+2. **Navigate to the desired lab folder** (Lab-1, Lab-2, Lab-3, Lab-4, or Minor-Project) in the Jupyter interface
 
 3. **Open the notebook** (.ipynb file) and run the cells sequentially
 
@@ -205,6 +233,12 @@ cd Lab-4
 jupyter notebook Lab-4.ipynb
 ```
 
+**Minor Project:**
+```bash
+cd Minor-Project
+jupyter notebook Minor-Project.ipynb
+```
+
 ## 📊 Lab Results
 
 ### Lab 1 Outcomes
@@ -224,13 +258,22 @@ jupyter notebook Lab-4.ipynb
 - Demonstrated superiority of advanced architectures (ResNet) over classical ones (LeNet)
 
 ### Lab 4 Outcomes
-- Designed CNN architectures for imbalanced image classification
+- Designed CNN architectures for imbalanced image classification on TWO datasets
+  (Flower Recognition + CIFAR-10 Imbalanced)
 - Implemented multiple imbalance handling techniques (oversampling, SMOTE, class weighting)
 - Compared EfficientNet and ResNet on imbalanced datasets
 - Analyzed performance using imbalance-specific metrics (Balanced Accuracy, G-Mean, PR-AUC)
 - Visualized learned features with t-SNE, UMAP, and Grad-CAM
 - Demonstrated transfer learning across imbalanced domains
 - Conducted comprehensive error analysis for minority classes
+
+### Minor Project Outcomes
+- Implemented WCE (Wireless Capsule Endoscopy) classification on imbalanced Kvasir-Capsule dataset
+- Applied random under-sampling to control majority class bias
+- Applied augmentation-based over-sampling for minority classes
+- Designed transfer learning pipelines with EfficientNet-B0, MobileNet-V2, and ResNet-50
+- Implemented adaptive learning rate strategies (ReduceLROnPlateau, CosineAnnealingLR)
+- Compared three training settings: no handling / under-sampling / under-sampling + augmentation
 
 ## 🔍 Key Learnings
 
