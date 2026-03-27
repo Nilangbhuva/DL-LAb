@@ -1,5 +1,4 @@
-# Deep Learning Lab — Minor Project
-## WCE (Wireless Capsule Endoscopy) Gastrointestinal Disease Classification
+# Minor Project: WCE (Wireless Capsule Endoscopy) Gastrointestinal Disease Classification
 
 ---
 
@@ -60,9 +59,8 @@ This project implements a complete deep learning pipeline for **multi-class clas
 
 ```
 Minor-Project/
-├── Minor-Project.ipynb          # Main notebook (all 7 tasks)
-├── Minor-Project-executed.ipynb # Pre-executed notebook with outputs
-└── README.md                    # This file
+├── Minor-Project.ipynb   # Main notebook (all 7 tasks)
+└── README.md             # This file
 ```
 
 ---
@@ -153,3 +151,22 @@ With real Kvasir-Capsule images and 30+ epochs:
 - EfficientNet-B0 typically achieves **85–92% accuracy**
 - Under-sampling + augmentation improves minority class recall by **15–25%**
 - Macro F1 improves from ~0.45 (baseline) to ~0.78 (balanced training)
+
+---
+
+## References
+
+1. Borgli et al. (2020) — Kvasir-Capsule: A Video Capsule Endoscopy Dataset
+2. Tan & Le (2019) — EfficientNet: Rethinking Model Scaling for CNNs
+3. Howard et al. (2017) — MobileNets: Efficient Convolutional Neural Networks
+4. He et al. (2016) — Deep Residual Learning for Image Recognition
+5. Lin et al. (2017) — Focal Loss for Dense Object Detection
+
+---
+
+## Author
+
+**Nilang Bhuva**
+Admission Number: U23AI047
+Program: Artificial Intelligence (AI)
+Year: 3rd Year
